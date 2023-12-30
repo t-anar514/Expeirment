@@ -12,11 +12,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#121212] dark:bg-white">
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
-        <DetailProject/>
-        {/* <HeroSection />
+        {/* <DetailProject/> */}
+        <HeroSection />
         <AchievementsSection />
         <AboutSection />
-        <ProjectsSection />  */}
+        <ProjectsSection /> 
         {/* <EmailSection />*/}
       </div>
       <Footer />
