@@ -1,0 +1,26 @@
+{
+    "textData": [
+      {
+        "id": 1,
+        "title1": "Armajet is a unique 2.5D multiplayer platformer centered around competitive jetpack combat and unique weapons. It was released in 2019 to very positive ratings with cross platform play between Steam, Android, and iOS. From early beta to today it’s maintained a devoted community with regular tournaments and Discord discussions.",
+        "title2": "I worked as a senior engineer on this project on a close team that ranged from 12 to 22 total people. In that role I was fortunate to touch virtually all areas of the codebase and implemented many core gameplay, networking, and UI features. Although the client was built in Unity, gameplay was all implemented in pure C# and shared with the client and server, supporting custom networking and physics all built in house. Through close collaboration with the design team, I was able to bring crazy ideas like BattleBall, a 4v4 sports fight to the death, to reality for hundreds of thousands of users.",
+        "title3": "I had to solve countless problems only relevant to twitch real time multiplayer and matchmaking, as well as to a high performance game for a wide variety of platforms. I’m very proud that Armajet plays at a consistent 60 FPS on mid-range Android/iOS devices, and works well on slow or spotty internet due my work.",
+        "description1": "Game mode synchronization on client and game server",
+        "description2": "Heavy optimization of UI, memory, and gameplay framerate",
+        "description3": "Flexible multi-platform input system",
+        "description4": "Party System",
+        "description5": "Real-time messaging and chat",
+        "description6": "Dozens of 3rd party integrations on iOS/Android/Steam",
+        "description7": "Proprietary Account Login",
+        "description8": "Level Creation And Design Tools",
+        "description9": "    Tetris Blitz has unfortunately since shut down, but it had a great 7 year run!    ",
+        "undelined": "Official site"
+      },
+      {
+        "id": 2,
+        "title": "Second Item",
+        "description": "This is the second item's description."
+      }
+    ]
+  }
+  

@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/DetailProject",
+    previewUrl: "/DetailPage",
   },  
   {
     id: 2,
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white dark:text-black mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white dark:text-black flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white dark:text-black flex flex-row justify-center   items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -112,6 +112,7 @@ const ProjectsSection = () => {
           >
             <ProjectCard
               key={project.id}
+              index={index}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
