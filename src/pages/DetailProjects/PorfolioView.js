@@ -8,23 +8,23 @@ import AchievementsSection from "../components/AchievementsSection";
 import dynamic from "next/dynamic";  
 
 export default function DetailProject() {
-    const router = useRouter();
+  const router = useRouter();
   const { id } = router.query; // This 'id' corresponds to the [id] in the file name
   const numericId = parseInt(id, 10);
   const detailData = textData.find(item => item.id === numericId);
-
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
   if (!detailData) {
     return <p>User not found</p>;
   }
 
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
     
-    const cardVariants = {
-      initial: { y: 50, opacity: 0 },
-      animate: { y: 0, opacity: 1 },
-    };
     return (
       <div className="w-full flex flex-col items-center dark:text-black lg:pb-24 pb-12">
         <div className="w-full lg:px-12">
