@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Wecodly",
     description: "Project 1 description",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
@@ -16,7 +16,7 @@ const projectsData = [
   },  
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Geru",
     description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "SIP",
     description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
@@ -34,8 +34,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Echina",
+    description: "Flight Ordering Application",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
@@ -43,16 +43,16 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
+    title: "CISV",
     description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    image: "/images/projects/5.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/DetailProject",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Bookid",
     description: "Project 5 description",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white dark:text-black mt-4 mb-8 md:mb-12">
-        My Projects
+      What am I doing outside of class?
       </h2>
       <div className="text-white dark:text-black flex flex-row justify-center   items-center gap-2 py-6">
         <ProjectTag
@@ -127,3 +127,5 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
+//https://www.figma.com/proto/ZwrxeBHB1EYhBFtUUc1tvV/Bookid?node-id=1-321&node-type=frame&t=riyDnprOlWfCoxlm-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A248&starting-point-node-id=1159%3A134
