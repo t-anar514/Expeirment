@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Wecodly",
-    description: "Project 1 description",
+    description: "WeCodly connects aspiring IT enthusiasts with experts and resources.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Geru",
-    description: "Project 2 description",
+    description: "First time working as a Web developer intern at GERU was unique ",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -26,8 +26,8 @@ const projectsData = [
   {
     id: 3,
     title: "SIP",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    description: "Implemented a STEM-focused program for middle school students.",
+    image: "/images/projects/3.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/DetailProject",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "CISV",
-    description: "Authentication and CRUD operations",
+    description: "WeCodly connects aspiring IT enthusiasts with experts and resources.",
     image: "/images/projects/5.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -53,7 +53,7 @@ const projectsData = [
   {
     id: 6,
     title: "Bookid",
-    description: "Project 5 description",
+    description: "I recently established BOOKIDS and am currently focusing on web development.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
