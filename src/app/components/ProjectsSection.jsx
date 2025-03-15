@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "CISV",
-    description: "WeCodly connects aspiring IT enthusiasts with experts and resources.",
+    description: "Learned about how to be global citizen.",
     image: "/images/projects/5.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
