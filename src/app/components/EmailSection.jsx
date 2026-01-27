@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
-import { FaFacebook ,FaInstagramSquare} from "react-icons/fa";
+import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
@@ -18,26 +18,25 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpoint = "https://formsubmit.co/ajax/tamiranar514@gmail.com";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+    try {
+      const response = await fetch(endpoint, options);
+      if (response.ok) {
+        console.log("Message sent.");
+        setEmailSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
     }
   };
 
@@ -58,13 +57,11 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            {/* <Image src={GithubIcon} alt="Github Icon" /> */}
-            <FaFacebook className="w-10 h-10"/>
+          <Link href="https://github.com/Anar514">
+            <FaFacebook className="w-10 h-10" />
           </Link>
-          <Link href="linkedin.com">
-            {/* <Image src={LinkedinIcon} alt="Linkedin Icon" /> */}
-            <AiFillInstagram className="w-12 h-12"/>
+          <Link href="https://www.instagram.com/anar5.14/">
+            <AiFillInstagram className="w-12 h-12" />
           </Link>
         </div>
       </div>
@@ -88,7 +85,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border dark:bg-slate-200 dark:text-black border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="tamiranar514@gmail.com"
+                placeholder="youremail@example.com"
               />
             </div>
             <div className="mb-6">

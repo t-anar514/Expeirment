@@ -26,20 +26,11 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
+        <li>Temple University (Computer Science)</li>
         <li>Nest Education IT School</li>
       </ul>
     ),
   },
-  // {
-  //   title: "Certifications",
-  //   id: "certifications",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>AWS Cloud Practitioner</li>
-  //       <li>Google Professional Cloud Developer</li>
-  //     </ul>
-  //   ),
-  // },
 ];
 
 const AboutSection = () => {
@@ -59,10 +50,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white dark:text-black mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I’m a 12th-grade student with a dream of becoming an entrepreneur in Mongolia.
-           My goal is to study abroad for my bachelor’s degree and return to create 
-           meaningful change in my country through innovation and technology.
+            I&apos;m currently living in Kyoto, studying at Temple University, majoring in Computer Science.
+            I&apos;m passionate about technology and entrepreneurship, and I&apos;m always looking for ways
+            to create meaningful change through innovation.
           </p>
+
           <div className="flex flex-row justify-start mt-8 ">
             <TabButton
               selectTab={() => handleTabChange("skills")}

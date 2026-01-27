@@ -35,14 +35,14 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          I’m passionate about technology and entrepreneurship, I’m currently working on a platform to teach coding and connect learners with IT experts.I love collaborating with others to create meaningful change.
+            I&apos;m currently living in Kyoto, studying Computer Science at Temple University. I&apos;m passionate about technology and entrepreneurship, currently working on Azen—a platform to help visitors explore Japan.
           </p>
           <div>
             <Link
               href="/#about"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-             About me
+              About me
             </Link>
             {/* <Link
               href="/"
@@ -61,15 +61,15 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <Link href="https://www.instagram.com/anar5.14/">
-          <div className="  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/image.png"
-              alt="hero image"
-              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
-            />
-          </div></Link>
+            <div className="  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+              <Image
+                src="/images/image.png"
+                alt="hero image"
+                className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                width={300}
+                height={300}
+              />
+            </div></Link>
         </motion.div>
       </div>
     </section>

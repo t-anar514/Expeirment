@@ -4,62 +4,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [
-  {
-    id: 1,
-    title: "Wecodly",
-    description: "WeCodly connects aspiring IT enthusiasts with experts and resources.",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/DetailPage",
-  },  
-  {
-    id: 2,
-    title: "Geru",
-    description: "First time working as a Web developer intern at GERU was unique ",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/DetailProject",
-  },
-  {
-    id: 3,
-    title: "SIP",
-    description: "Implemented a STEM-focused program for middle school students.",
-    image: "/images/projects/3.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/DetailProject",
-  },
-  {
-    id: 4,
-    title: "Echina",
-    description: "Flight Ordering Application",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/DetailProject",
-  },
-  {
-    id: 5,
-    title: "CISV",
-    description: "Learned about how to be global citizen.",
-    image: "/images/projects/5.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/DetailProject",
-  },
-  {
-    id: 6,
-    title: "Bookid",
-    description: "I recently established BOOKIDS and am currently focusing on web development.",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/DetailProject",
-  },
-];
+import { projectsData } from "../data/projects";
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -82,7 +27,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white dark:text-black mt-4 mb-8 md:mb-12">
-      What am I doing outside of class?
+        What am I doing outside of class?
       </h2>
       <div className="text-white dark:text-black flex flex-row justify-center   items-center gap-2 py-6">
         <ProjectTag
@@ -112,6 +57,7 @@ const ProjectsSection = () => {
           >
             <ProjectCard
               key={project.id}
+              id={project.id}
               index={index}
               title={project.title}
               description={project.description}
